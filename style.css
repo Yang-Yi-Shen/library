@@ -1,0 +1,52 @@
+/*CSS for form*/
+form {
+    margin: 10px 0px;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+form label {
+    display: block;
+    margin: 5px 0px;
+}
+
+#radios {
+    display: flex;
+    align-items: center;
+}
+
+/*CSS for books*/
+.book-info-div {
+    max-width: 150px;;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 2px;
+    margin: 10px 0px;
+}
+
+.book-info-div p {
+    margin: 5px 0px;
+}
+
+.delete-button {
+    background-color: rgb(255, 92, 92);
+    border: 1px solid;
+    border-radius: 2px;
+    margin: 0px 5px;
+}
+
+.delete-button:hover {
+    background-color: rgb(232, 83, 83);
+}
+
+.toggle-read-button {
+    background-color: rgb(93, 166, 255);
+    border: 1px solid;
+    border-radius: 2px;
+    margin: 0px 5px;    
+}
+
+.toggle-read-button:hover {
+    background-color: rgb(81, 145, 224);  
+}
