@@ -48,8 +48,8 @@ form.addEventListener('submit', (event) => {
   authorItem.innerText = `Author: ${author.value}`;
   const pagesItem = document.createElement('p');
   pagesItem.innerText = `Pages: ${pages.value}`;
-  const readItem = document.createElement('p');
-  readItem.innerText = `Read or not: ${read.value}`;
+  //const readItem = document.createElement('p');
+  //readItem.innerText = `Read or not: ${read.value}`;
 
   // add delete button to the book
   const deleteButton = document.createElement('button');
@@ -62,17 +62,23 @@ form.addEventListener('submit', (event) => {
 
   // add toggle read button to the book
   const toggleReadButton = document.createElement('button');
+  const green = 'rgb(69, 184, 30)';
+  const red = 'rgb(255, 92, 92)';
   if (read.value == 'yes') {
     toggleReadButton.innerText = 'Read';
+    toggleReadButton.style.backgroundColor = green;
   } else if (read.value == 'no') {
     toggleReadButton.innerText = 'Not Read';
+    toggleReadButton.style.backgroundColor = red;
   }
   toggleReadButton.classList.add('toggle-read-button');
   toggleReadButton.addEventListener('click', () => {
-    if (toggleReadButton.innerTextt == 'Read') {
+    if (toggleReadButton.innerText == 'Read') {
       toggleReadButton.innerText = 'Not Read';
+      toggleReadButton.style.backgroundColor = red;
     } else if (toggleReadButton.innerText == 'Not Read') {
       toggleReadButton.innerText = 'Read';
+      toggleReadButton.style.backgroundColor = green;
     }
   })
   inputsDiv.appendChild(toggleReadButton);
@@ -81,7 +87,7 @@ form.addEventListener('submit', (event) => {
   inputsDiv.appendChild(titleItem);
   inputsDiv.appendChild(authorItem);
   inputsDiv.appendChild(pagesItem);
-  inputsDiv.appendChild(readItem);
+  //inputsDiv.appendChild(readItem);
   list.appendChild(inputsDiv);
 
   // clear the inputs
@@ -90,3 +96,4 @@ form.addEventListener('submit', (event) => {
   pages.value = '';
   read.value = '';
 });
+
