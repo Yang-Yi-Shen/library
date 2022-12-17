@@ -11,9 +11,32 @@ form label {
     margin: 5px 0px;
 }
 
+input[type='text'], input[type='number'] {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 25px;
+    width: 180px;
+    padding: 0px 5px;
+}
+
 #radios {
     display: flex;
     align-items: center;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 25px;
+    color: white;
+}
+
+#submit-btn {
+    background-color: rgb(61, 135, 239);
+}
+
+#open-form-btn {
+    background-color: rgb(61, 135, 239);
 }
 
 /*CSS for books*/
@@ -31,8 +54,8 @@ form label {
 
 .delete-button {
     background-color: rgb(255, 92, 92);
-    border: 1px solid;
-    border-radius: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
     margin: 0px 5px;
 }
 
@@ -41,9 +64,8 @@ form label {
 }
 
 .toggle-read-button {
-    background-color: rgb(93, 166, 255);
-    border: 1px solid;
-    border-radius: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
     margin: 0px 5px;    
 }
 
