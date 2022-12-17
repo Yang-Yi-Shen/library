@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" href="images/openbook.png">
     <link rel="stylesheet" href="style.css">
     <title>library 📚</title>
   </head>
@@ -8,20 +9,20 @@
     <h1>library 📚</h1>
     <form id="my-form">
         <label for="title">Book Title</label>
-        <input type="text" id="title" placeholder="Enter book title here">
+        <input type="text" id="title" placeholder="Book title here" required>
         <label for="author">Book Author</label>
-        <input type="text" id="author" placeholder="Enter the author here">
+        <input type="text" id="author" placeholder="Author name here" required>
         <label for="title">Number of Pages</label>
-        <input type="text" id="pages" placeholder="Enter book title here">
+        <input type="number" id="pages" placeholder="Number of pages here" required>
         <!--radio buttons-->
         <label for="radios">Read or not:</label>
         <div id="radios">
             <label for="yes">Yes</label>
-            <input type="radio" name="read" value="yes">
+            <input type="radio" name="read" value="yes" required>
             <label for="no">No</label>
-            <input type="radio" name="read" value="no">
+            <input type="radio" name="read" value="no" required>
         </div>
-        <button type="submit">+ NEW BOOK</button>
+        <button id="submit-btn" type="submit">+ NEW BOOK</button>
     </form>
     <button id="open-form-btn"  onclick="openForm()">Close Form</button>
     <main id="bookshelf"></main>
@@ -29,3 +30,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
